@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-3">
+            <label for="">Choose person:</label>
+            <select name="osobe" id="osobe">
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="col-9" id="profile">
+            <div class="row">
+                <div id="picture" class="col-3">
+                    <img id="slika">
+                </div class="col-3">
+                <div class="col-3">
+                    <label for="">Years:</label>
+                    <input type="text" name="" id="godine" readonly>
+                    <br>
+                    <label for="">Gender:</label>
+                    <input type="text" id="pol" readonly>
+                </div>
+
+
+                <div class="col-3">
+                    <h3>Direct friends:</h3>
+                    <ul id="directfriends"></ul>
+                </div>
+
+                <div id="suggestedfriends" class="col-3">
+                    <h3>Suggested friends:</h3>
+                    <ul id="listasuggested"></ul>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+
+    <div>
+        <h2>Friends of friends</h2>
+        <div id="freindsoffriends">
+
+        </div>
+    </div>
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
