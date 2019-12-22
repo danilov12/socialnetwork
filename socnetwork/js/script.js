@@ -95,10 +95,8 @@ function pronadjiSuggestedFriends(osoba) {
             for (let osobaUNizu of nizOsoba) {
                 if (osobaUNizu.id == osoba.id) {
                     continue;
-                    //samo da preskoci sebe
                 } else if (osobaUNizu.friends.length < 2) {
                     continue;
-                    //samo da preskoci osobe koje imaju manje od dva prijatelja
                 } else if (jesuLiPrijatelji(osoba, osobaUNizu)) {
                     continue;
                 } else {
